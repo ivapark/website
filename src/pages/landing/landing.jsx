@@ -45,9 +45,9 @@ const LandingPage = () => {
           <div className="content-wrapper">
             <div className="main-content">
               <div className="text-and-rocks">
-                <div className="greeting">
-                  <p>Hello, my name is Iva</p>
-                </div>
+              <div className="greeting">
+                <p className="typing">Hello, my name is Iva</p>
+              </div>
                 
                 <div className="rocks-container">
                   {/* Letter I */}

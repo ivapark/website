@@ -21,6 +21,29 @@
   background-color: #FAFAFA;
 }
 
+.typing {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #6A6A6A;
+  white-space: nowrap;         
+  overflow: hidden;              
+  width: 0;                       
+  animation: typing 3s steps(15, end) forwards;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; } 
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
