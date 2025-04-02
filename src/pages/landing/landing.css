@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
-  margin-top: 20px;
 }
 
 .content-wrapper {
@@ -44,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   gap: 100px;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px; /* bring both greeting and rock up */
   
 }
@@ -162,17 +161,9 @@
   transform: scale(1.5);
 }
 
-/* Profile picture styling */
-.profile-picture img {
-  width: 400px;
-  height: auto;
-  border-radius: 20px;
-  border: 0.2px solid #B8B8B8;
-  margin-top: 20px;
-
-}
-
 /* Portfolio section styles */
+
+
 .portfolio-section {
   width: 100%;
   text-align: center;
@@ -193,30 +184,47 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 30px;
-  padding: 20 50px;
+  padding: 20 60px;
   justify-items: center; /* Centering the portfolio items */
-}
+  margin-bottom: 30px;
 
+}
+.portfolio-textandimage{
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
 .portfolio-item {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   transition: transform 0.3s ease;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  max-width: 350px; /* Ensuring the items are not too wide */
-  max-height: 300px;
-  margin-bottom: 100px;
-
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.portfolio-item img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
+
+.portfolio-item-image-container.phone {
+  height: 350px; /* Taller for phone shape */
+  align-items: center;
+  justify-content: center;
 }
+
+.portfolio-item-image-container.desktop {
+  height: 220px; /* Shorter for laptop mockups */
+}
+
+.portfolio-item-image-container img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
 
 .portfolio-item p {
   font-family: 'Inria Sans', sans-serif;
@@ -224,6 +232,7 @@
   font-weight: 400;
   margin-top: 15px;
   color: #6a6a6a;
+  text-align: center;
 }
 
 .portfolio-item:hover {
