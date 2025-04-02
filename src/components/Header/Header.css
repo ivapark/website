@@ -1,0 +1,53 @@
+/* Header Styling */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #FAFAFA;
+  z-index: 2;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: 300;
+  
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  width: 100%;
+  align-items: center;
+  font-weight: 300;
+  
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;  
+  color: inherit;  
+  font-size: 24px;
+  padding:10px;       
+}
+
+nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+  font-size: 18px;
+  
+}
+
+a:hover{
+  color: #b8babb;
+}
+
+nav a:hover {
+  color: #b8babb;
+}

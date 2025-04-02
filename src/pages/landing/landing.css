@@ -1,0 +1,235 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  margin-top: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  width: 100%;
+}
+
+.text-and-rocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin-top: 200px;
+  margin-bottom: 100px; /* bring both greeting and rock up */
+  
+}
+
+.greeting {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: left;
+  margin-right: 400px;
+  width: 100%;
+  color: #6A6A6A;
+  margin-bottom: 30px;
+}
+
+.rocks-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 80px;
+  height: 250px;
+  margin-top: 20px; /* move just rock down */
+}
+
+/* Letter I Styles */
+.letter-i {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.i-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+/* Letter V Styles */
+.letter-v {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.v-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 15px;
+  transform: rotate(-20deg);
+  height: 100%;
+}
+
+.v-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-left: 15px;
+  transform: rotate(20deg);
+  height: 100%;
+}
+
+/* Letter A Styles */
+.letter-a {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.a-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 8px;
+  transform: rotate(15deg);
+  height: 100%;
+  margin-top: 10px;
+}
+
+.a-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin-top: -150px;
+}
+
+.a-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-left: 8px;
+  transform: rotate(-15deg);
+  height: 100%;
+  margin-top: 10px;
+
+}
+
+.rock {
+  width: 60px;
+  height: 60px;
+  margin: 3px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+}
+
+.rock:hover {
+  transform: scale(1.5);
+}
+
+/* Profile picture styling */
+.profile-picture img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  border: 0.2px solid #B8B8B8;
+  margin-top: 20px;
+
+}
+
+/* Portfolio section styles */
+.portfolio-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Adjusted to position below the rocks */
+}
+
+.portfolio-section h2 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 36px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  padding: 20 50px;
+  justify-items: center; /* Centering the portfolio items */
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px; /* Ensuring the items are not too wide */
+  max-height: 300px;
+  margin-bottom: 100px;
+
+}
+
+.portfolio-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.portfolio-item p {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #6a6a6a;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
