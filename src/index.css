@@ -1,0 +1,8 @@
+/* Apply Inria Sans globally with light weight */
+body {
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;  /* Light font */
+    background-color: #FAFAFA;
+
+  }
+  
