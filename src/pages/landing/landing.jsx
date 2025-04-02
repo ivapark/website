@@ -109,32 +109,64 @@ const LandingPage = () => {
           <div className="portfolio-section">
                     <h2>Explore My Work</h2>
                     <div className="portfolio-grid">
-                      <div className="portfolio-item">
-                        <img src="/MissPoppinsApp.png" alt="MissPoppins App Redesign" />
+                      <div className="portfolio-textandimage">
+                        <div className="portfolio-item">
+                          <div className="portfolio-item-image-container phone">
+                            <img src="/MissPoppinsApp.png" alt="MissPoppins App Redesign" />
+                          </div>
+                        </div>
                         <p>MissPoppins App Redesign</p>
                       </div>
-                      <div className="portfolio-item">
-                        <img src="/MissPoppinsDashboard.png" alt="MissPoppins Dashboard Redesign" />
+
+                      <div className="portfolio-textandimage">
+                       <div className="portfolio-item">
+                          <div className="portfolio-item-image-container desktop">
+                            <img src="/MissPoppinsDashboard.png" alt="MissPoppins Dashboard Redesign" />
+                          </div>
+                        </div>
                         <p>MissPoppins Dashboard Redesign</p>
                       </div>
-                      <div className="portfolio-item">
-                        <img src="/LinkLease.png" alt="LinkLease" />
+
+                      <div className="portfolio-textandimage">
+                        <div className="portfolio-item">
+                          <div className="portfolio-item-image-container desktop">
+                            <img src="/LinkLease.png" alt="LinkLease" />
+                          </div>
+                        </div>
                         <p>LinkLease</p>
                       </div>
-                      <div className="portfolio-item">
-                        <img src="/Nerofilm.png" alt="Nerofilm" />
+
+
+                      <div className="portfolio-textandimage">
+                        <div className="portfolio-item">
+                          <div className="portfolio-item-image-container desktop">
+                            <img src="/Nerofilm.png" alt="Nerofilm" />
+                          </div>
+                        </div>
                         <p>Nerofilm</p>
                       </div>
-                      <div className="portfolio-item">
-                        <img src="/MBTIRamenProject.png" alt="MBTI Ramen Project" />
+
+
+                      <div className="portfolio-textandimage">
+                        <div className="portfolio-item">
+                          <div className="portfolio-item-image-container desktop">
+                            <img src="/MBTIRamenProject.png" alt="MBTI Ramen Project" />
+                          </div>
+                        </div>
                         <p>MBTI Ramen Project</p>
                       </div>
-                      <div className="portfolio-item">
-                        <img src="/JobTracker.png" alt="Job Tracker" />
+
+                      <div className="portfolio-textandimage">
+                        <div className="portfolio-item">
+                          <div className="portfolio-item-image-container phone">
+                            <img src="/JobTracker.png" alt="Job Tracker" />
+                          </div>
+                        </div>
                         <p>Job Tracker</p>
                       </div>
+
                     </div>
-                  </div>
+           </div>
         </div>
 
         
