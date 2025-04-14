@@ -1,15 +1,16 @@
 import React from 'react';
-import './Header.css';  // Make sure to link the header styling
+import { Link } from 'react-router-dom'; 
+import './Header.css';
 
 const Header = () => {
   return (
     <header>
       <div className="header-content">
-      <a href="#landing-page" >Iva Park</a>
+        <Link to="/">Iva Park</Link> 
 
         <nav>
-          <a href="#about-me">About Me</a>
-          <a href="#why-rock">Why Rock?</a>
+          <Link to="/aboutme">About Me</Link>
+          <Link to="/whyrock">Why Rock?</Link>
           <a href="#portfolio">Portfolio</a>
         </nav>
       </div>

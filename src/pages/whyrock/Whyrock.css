@@ -1,0 +1,52 @@
+
+
+.whyrock-container {
+    background-color: #FAFAFA;
+    text-align: center;
+    font-family: 'Kode Mono', monospace;
+    color: #1a1a1a;
+    min-height: 100vh; 
+ 
+  }
+  
+  
+  .whyrock-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  .whyrock-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: 'Inria Sans', sans-serif !important;
+
+  }
+  
+  .rock-section {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .rock-bg {
+    width: 100%;
+    max-width: 600px;
+    opacity: 0.3;
+    margin: 0 auto;
+    display: block;
+    margin-top: -100px;
+  }
+  
+  .rock-description {
+    font-family: 'Inria Sans', sans-serif !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+  }
+  
