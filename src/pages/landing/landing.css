@@ -210,6 +210,10 @@
   padding: 20 60px;
   justify-items: center; /* Centering the portfolio items */
   margin-bottom: 30px;
+  font-family: 'Inria Sans', sans-serif !important;
+  font-size: 16;
+  font-weight: 300;
+  color: #6A6A6A;
 
 }
 .portfolio-textandimage{
@@ -228,6 +232,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+
 }
 
 
@@ -250,7 +255,7 @@
 
 
 .portfolio-item p {
-  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Inria Sans', sans-serif !important;
   font-size: 18px;
   font-weight: 400;
   margin-top: 15px;

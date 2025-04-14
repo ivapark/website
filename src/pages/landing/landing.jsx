@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './landing.css';
 import Header from '../../components/Header/Header'; 
 
@@ -71,11 +72,11 @@ const LandingPage = () => {
                       <img src="/rockv5.svg" className="rock" alt="rock" />
                     </div>
                     <div className="v-right">
-                      <img src="/rockv5.svg" className="rock" alt="rock" />
+                      <img src="/rockv1.svg" className="rock" alt="rock" />
                       <img src="/rockv6.svg" className="rock" alt="rock" />
                       <img src="/rockv7.svg" className="rock" alt="rock" />
                       <img src="/rockv8.svg" className="rock" alt="rock" />
-                      <img src="/rockv9.svg" className="rock" alt="rock" />
+                      <img src="/rock1.svg" className="rock" alt="rock" />
                     </div>
                   </div>
 
@@ -85,18 +86,18 @@ const LandingPage = () => {
                       <img src="/rocka1.svg" className="rock" alt="rock" />
                       <img src="/rocka2.svg" className="rock" alt="rock" />
                       <img src="/rocka3.svg" className="rock" alt="rock" />
-                      <img src="/rocka3.svg" className="rock" alt="rock" />
-                      <img src="/rocka3.svg" className="rock" alt="rock" />
+                      <img src="/rocka4.svg" className="rock" alt="rock" />
+                      <img src="/rocka5.svg" className="rock" alt="rock" />
                     </div>
                     <div className="a-middle">
-                      <img src="/rocka4.svg" className="rock" alt="rock" />
+                      <img src="/rocka6.svg" className="rock" alt="rock" />
                     </div>
                     <div className="a-right">
-                      <img src="/rocka5.svg" className="rock" alt="rock" />
+                      <img src="/rocka7.svg" className="rock" alt="rock" />
                       <img src="/rocka6.svg" className="rock" alt="rock" />
                       <img src="/rocka7.svg" className="rock" alt="rock" />
                       <img src="/rocka3.svg" className="rock" alt="rock" />
-                      <img src="/rocka3.svg" className="rock" alt="rock" />
+                      <img src="/rocka1.svg" className="rock" alt="rock" />
                     </div>
                   </div>
                 </div>
@@ -111,12 +112,15 @@ const LandingPage = () => {
                     <div className="portfolio-grid">
                       <div className="portfolio-textandimage">
                         <div className="portfolio-item">
-                          <div className="portfolio-item-image-container phone">
-                            <img src="/MissPoppinsApp.png" alt="MissPoppins App Redesign" />
-                          </div>
+                          <Link to="/misspoppinsapp">
+                            <div className="portfolio-item-image-container phone">
+                              <img src="/MissPoppinsApp.png" alt="MissPoppins App Redesign" />
+                            </div>
+                          </Link>
                         </div>
                         <p>MissPoppins App Redesign</p>
                       </div>
+
 
                       <div className="portfolio-textandimage">
                        <div className="portfolio-item">
