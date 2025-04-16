@@ -28,8 +28,10 @@ body {
 .mp-subtitle {
     font-size: 32px !important;
     font-weight: 300 !important;
-    color: #6c3483;
+    margin-bottom: 3.5rem;
+    color: #000;
 }
+
 
 .mp-main-text {
     font-size: 24px !important;
@@ -343,12 +345,7 @@ body {
     
   }
   
-  .mp-subtitle {
-    font-size: 32px;
-    font-weight: 300;
-    margin-bottom: 3.5rem;
-    color: #000;
-  }
+
   
   .mp-finding {
     display: flex;

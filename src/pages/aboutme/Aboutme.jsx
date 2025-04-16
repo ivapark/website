@@ -2,7 +2,6 @@ import React from "react";
 import "./Aboutme.css";
 import Header from "../../components/Header/Header";
 
-const profileImg = "/ivapfp.png";
 
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
       <Header />
       <h1 className="about-title">About Me</h1>
       <div className="about-content">
-        <img src={profileImg} alt="Iva Park" className="profile-img" />
+        <img src={`${import.meta.env.BASE_URL}ivapfp.png`} className="ivapfp" alt="ivapfpn" />
         <div className="about-text">
           <p>
             I’m Iva, a Junior at NYU double majoring in Computer Science and Psychology.
