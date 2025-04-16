@@ -5,18 +5,18 @@ import Header from '../../components/Header/Header';
 import { IconButton } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
+const getAssetPath = (filename) => `${import.meta.env.BASE_URL}misspoppinsapp/${filename}`;
 
 const AffinityCarousel = () => {
   const images = [
-    "/misspoppinsapp/image3.svg",
-    "/misspoppinsapp/image4.svg",
-    "/misspoppinsapp/image5.svg",
-    "/misspoppinsapp/image6.svg",
-    "/misspoppinsapp/image7.svg",
-    "/misspoppinsapp/image8.svg",
-    "/misspoppinsapp/image9.svg",
-    "/misspoppinsapp/image10.svg"
+    getAssetPath("image3.svg"),
+    getAssetPath("image4.svg"),
+    getAssetPath("image5.svg"),
+    getAssetPath("image6.svg"),
+    getAssetPath("image7.svg"),
+    getAssetPath("image8.svg"),
+    getAssetPath("image9.svg"),
+    getAssetPath("image10.svg"),
   ];
     
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -93,7 +93,7 @@ const MissPoppinsApp = () => {
         <Box className="mp-image-section">
         <video
           className="mp-video"
-          src="/misspoppinsapp/misspoppinsappvideo1.mov"
+          src={`${import.meta.env.BASE_URL}misspoppinsapp/misspoppinsappvideo1.mov`}
           autoPlay
           muted
           loop
@@ -113,17 +113,17 @@ const MissPoppinsApp = () => {
 
         <Box className="mp-background-icons">
           <Box className="mp-background-icon">
-            <img src="/misspoppinsapp/consultation.svg" alt="Consultation" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/consultation.svg`} alt="Consultation" />
             <Typography className="mp-background-small-text">One time free consultation</Typography>
           </Box>
 
           <Box className="mp-background-icon">
-            <img src="/misspoppinsapp/videochat.svg" alt="Video Support" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/videochat.svg`} alt="Video Support" />
             <Typography className="mp-background-small-text">Ongoing support via video calls and chat</Typography>
           </Box>
 
           <Box className="mp-background-icon">
-            <img src="/misspoppinsapp/webinars.svg" alt="Articles and Webinars" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/webinars.svg`} alt="Articles and Webinars" />
             <Typography className="mp-background-small-text">Access to articles and webinars</Typography>
           </Box>
         </Box>
@@ -155,48 +155,48 @@ const MissPoppinsApp = () => {
             <Typography className="mp-small-text step-label">
                 How parents navigate the process of finding the right coach
             </Typography>
-            <img src="/misspoppinsapp/step1.svg" alt="Step 1 Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/step1.svg`} alt="Consultation" />
             </Box>
             <Box className="mp-step">
             <Typography className="mp-small-text step-number">2.</Typography>
             <Typography className="mp-small-text step-label">
                 What their expectations for consultations and ongoing support
             </Typography>
-            <img src="/misspoppinsapp/step2.svg" alt="Step 2 Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/step2.svg`} alt="Consultation" />
             </Box>
             <Box className="mp-step">
             <Typography className="mp-small-text step-number">3.</Typography>
             <Typography className="mp-small-text step-label">
                 How they engage with articles, webinars, and community features
             </Typography>
-            <img src="/misspoppinsapp/step3.svg" alt="Step 3 Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/step3.svg`} alt="Consultation" />
             </Box>
         </Box>
 
         {/* Subcategory Icons */}
         <Box className="mp-subcategories">
           <Box className="mp-subcategory">
-            <img src="/misspoppinsapp/info-sources.svg" alt="Common Info Sources" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/info-sources.svg`} alt="Common Info Sources" />
             <Typography className="mp-small-text-research">Common Information Sources</Typography>
           </Box>
 
           <Box className="mp-subcategory">
-            <img src="/misspoppinsapp/architecture.svg" alt="Confusing Info Architecture" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/architecture.svg`} alt="Confusing Info Architecture" />
             <Typography className="mp-small-text-research">Confusing Information Architecture for App</Typography>
           </Box>
 
           <Box className="mp-subcategory">
-            <img src="/misspoppinsapp/package.svg" alt="Package Pricing" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/package.svg`} alt="Package Pricing" />
             <Typography className="mp-small-text-research">Package Pricing</Typography>
           </Box>
 
           <Box className="mp-subcategory">
-            <img src="/misspoppinsapp/community.svg" alt="Community Support" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/community.svg`} alt="Community Support" />
             <Typography className="mp-small-text-research">Community and Peer Support (Mentorship)</Typography>
           </Box>
 
           <Box className="mp-subcategory">
-            <img src="/misspoppinsapp/accessibility.svg" alt="Resource Access" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/accessibility.svg`} alt="Resource Access" />
             <Typography className="mp-small-text-research">Resource and Information Accessibility</Typography>
           </Box>
         </Box>
@@ -232,8 +232,8 @@ const MissPoppinsApp = () => {
 
           <Box className="mp-image-wrapper">
             <img
-              src="/misspoppinsapp/image2.png"
-              alt="Competitive Analysis Table"
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/image2.png`}
+            alt="Competitive Analysis Table"
               className="mp-hover-image"
             />
           </Box>
@@ -245,7 +245,7 @@ const MissPoppinsApp = () => {
 
           {/* Finding 1 */}
           <Box className="mp-finding">
-            <img src="/misspoppinsapp/strength.svg" alt="Strengths Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/strength.svg`} alt="Strengths Icon" />
             <Box className="mp-finding-text">
               <Typography className="mp-finding-title">Strengths to Leverage</Typography>
               <Typography className="mp-finding-body">
@@ -256,7 +256,7 @@ const MissPoppinsApp = () => {
 
           {/* Finding 2 */}
           <Box className="mp-finding">
-            <img src="/misspoppinsapp/strength.svg" alt="Strengths Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/opportunity.svg`} alt="Opportunity Icon" />
             <Box className="mp-finding-text">
               <Typography className="mp-finding-title">Opportunities for MissPoppins</Typography>
               <Typography className="mp-finding-body">
@@ -267,7 +267,7 @@ const MissPoppinsApp = () => {
 
           {/* Finding 3 */}
           <Box className="mp-finding">
-            <img src="/misspoppinsapp/keydiff.svg" alt="Key Differentiator Icon" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/keydiff.svg`} alt="Key Differentiator Icon" />
             <Box className="mp-finding-text">
               <Typography className="mp-finding-title">Key Differentiator</Typography>
               <Typography className="mp-finding-body" sx={{ fontStyle: 'italic' }}>
@@ -285,12 +285,12 @@ const MissPoppinsApp = () => {
 
           <Box className="mp-user-interview-content">
             <Box className="mp-user-interview-info">
-              <img src="/misspoppinsapp/number7.svg" alt="7 Interviews" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/number7.svg`} alt="7 Interviews" />
               <Typography className="mp-main-text">user interviews conducted</Typography>
             </Box>
 
             <img
-              src="/misspoppinsapp/userinterview.svg"
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/userinterview.svg`}
               alt="User Interviewees"
               className="mp-user-interview-image"
             />
@@ -308,15 +308,18 @@ const MissPoppinsApp = () => {
           <Typography className="mp-title">Research Findings</Typography>
 
           <Box className="mp-finding-header">
-            <img src="/misspoppinsapp/researchfindingsicon1.svg" alt="Finding Icon" className="mp-finding-icon" />
-            <Typography className="mp-subtitle mp-finding-subtitle">
+          <img
+            src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindingsicon1.svg`}
+            alt="Finding Icon"
+            className="mp-finding-icon"
+          />            <Typography className="mp-subtitle mp-finding-subtitle">
               1. How parents navigate the process of finding the right coach
             </Typography>
           </Box>
 
           <Box className="mp-finding-body">
             <img
-              src="/misspoppinsapp/researchfindings1.svg"
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings1.svg`}
               alt="Finding Insight Sticky Note"
               className="mp-finding-postit1"
             />
@@ -326,41 +329,47 @@ const MissPoppinsApp = () => {
         {/* Research Finding 2 */}
         <Box className="mp-researchfinding-section">
           <Box className="mp-finding-header">
-            <img src="/misspoppinsapp/researchfindings2icon.svg" className="mp-finding-icon" />
+            <img
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2icon.svg`}
+              className="mp-finding-icon"
+            />
             <Typography className="mp-finding-subtitle">
               2. What their expectations for consultations and ongoing support
             </Typography>
           </Box>
 
           <Box className="mp-row">
-            <img src="/misspoppinsapp/researchfindings2.svg" className="mp-finding-postit" />
-            <img src="/misspoppinsapp/researchfindings2-1.svg" className="mp-finding-postit" />
-            <img src="/misspoppinsapp/researchfindings2-2.svg" className="mp-finding-postit" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2.svg`} className="mp-finding-postit" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2-1.svg`} className="mp-finding-postit" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2-2.svg`} className="mp-finding-postit" />
           </Box>
 
           <Box className="mp-row mp-bottom-row">
-            <img src="/misspoppinsapp/researchfindings2-3.svg" className="mp-finding-postit" />
-            <img src="/misspoppinsapp/researchfindings2-4.svg" className="mp-finding-postit" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2-3.svg`} className="mp-finding-postit" />
+          <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings2-4.svg`} className="mp-finding-postit" />
           </Box>
         </Box>
 
         {/* Research Finding 3 */}
         <Box className="mp-researchfinding-section">
           <Box className="mp-finding-header">
-            <img src="/misspoppinsapp/researchfindings3icon.svg" className="mp-finding-icon2" />
+            <img
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings3icon.svg`}
+              className="mp-finding-icon2"
+            />
             <Typography className="mp-finding-subtitle2">
               3. How they engage with articles, webinars, and community features
             </Typography>
           </Box>
 
           <Box className="mp-row">
-            <img src="/misspoppinsapp/researchfindings3.svg" className="mp-finding-postit" />
-            <img src="/misspoppinsapp/researchfindings3-1.svg" className="mp-finding-postit" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings3.svg`} className="mp-finding-postit" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings3-1.svg`} className="mp-finding-postit" />
           </Box>
 
           <Box className="mp-row mp-bottom-row">
-            <img src="/misspoppinsapp/researchfindings3-2.svg" className="mp-finding-postit" />
-            <img src="/misspoppinsapp/researchfindings3-3.svg" className="mp-finding-postit" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings3-2.svg`} className="mp-finding-postit" />
+            <img src={`${import.meta.env.BASE_URL}misspoppinsapp/researchfindings3-3.svg`} className="mp-finding-postit" />
           </Box>
         </Box>
 
@@ -374,11 +383,17 @@ const MissPoppinsApp = () => {
 
           <Box className="mp-hmw-header">
             <Box className="mp-hmw-column">
-              <img src="/misspoppinsapp/hmwproblem.svg" alt="Problem Icon" />
+              <img
+                src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwproblem.svg`}
+                alt="Problem Icon"
+              />
               <Typography className="mp-hmw-subtitle">Problem</Typography>
             </Box>
             <Box className="mp-hmw-column">
-              <img src="/misspoppinsapp/hmwidea.svg" alt="Idea Icon" />
+              <img
+                src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwidea.svg`}
+                alt="Idea Icon"
+              />
               <Typography className="mp-hmw-subtitle">How Might We</Typography>
             </Box>
           </Box>
@@ -412,7 +427,11 @@ const MissPoppinsApp = () => {
           ].map((item, idx) => (
             <Box className="mp-hmw-row" key={idx}>
               <Box className="mp-hmw-bubble">{item.problem}</Box>
-              <img src="/misspoppinsapp/yellowarrow.svg" alt="Arrow" className="mp-hmw-arrow" />
+              <img
+                src={`${import.meta.env.BASE_URL}misspoppinsapp/yellowarrow.svg`}
+                alt="Arrow"
+                className="mp-hmw-arrow"
+              />
               <Box className="mp-hmw-bubble">{item.solution}</Box>
             </Box>
           ))}
@@ -433,7 +452,11 @@ const MissPoppinsApp = () => {
             <Box className="mp-hmw-steps">
               <Box className="mp-hmw-step">
                 <Box className="mp-hmw-icontext">
-                  <img src="/misspoppinsapp/calendaricon.svg" alt="Calendar Icon" className="mp-hmw-icon" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/calendaricon.svg`}
+                    alt="Calendar Icon"
+                    className="mp-hmw-icon"
+                  />
                   <Box>
                     <Typography className="mp-hmw-step-title">
                       1. <b>Integrate a scheduling calendar</b>
@@ -447,7 +470,11 @@ const MissPoppinsApp = () => {
 
               <Box className="mp-hmw-step">
                 <Box className="mp-hmw-icontext">
-                  <img src="/misspoppinsapp/timeicon.svg" alt="Timer Icon" className="mp-hmw-icon" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/timeicon.svg`}
+                    alt="Timer Icon"
+                    className="mp-hmw-icon"
+                  />
                   <Box>
                     <Typography className="mp-hmw-step-title">
                       2. <b>Include real-time availability updates</b>
@@ -468,7 +495,11 @@ const MissPoppinsApp = () => {
             <Box className="mp-hmw-combo">
               <Typography className="mp-hmw-label">Before</Typography>
               <Box className="mp-hmw-pair">
-                <img src="/misspoppinsapp/hmwbefore1.svg" alt="Before Scheduling" className="mp-hmw-phone" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwbefore1.svg`}
+                  alt="Before Scheduling"
+                  className="mp-hmw-phone"
+                />
                 <Typography className="mp-hmw-text">
                   Currently, the app lacks a scheduling feature, requiring users to communicate with the coach via chat after purchasing a package, which is inconvenient for both parties.
                 </Typography>
@@ -479,7 +510,11 @@ const MissPoppinsApp = () => {
             <Box className="mp-hmw-combo">
               <Typography className="mp-hmw-label">After</Typography>
               <Box className="mp-hmw-pair">
-                <img src="/misspoppinsapp/hmwafter1.svg" alt="After Scheduling" className="mp-hmw-phone" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter1.svg`}
+                  alt="After Scheduling"
+                  className="mp-hmw-phone"
+                />
                 <Typography className="mp-hmw-text">
                   Adding a scheduling calendar with flexible rescheduling capabilities will streamline the process and reduce effort for both users and coaches. <br /><br />
                   <br /><br /><br /><br /><br /><br /><br /><br />
@@ -502,7 +537,7 @@ const MissPoppinsApp = () => {
             <Box className="mp-hmw-steps">
               <Box className="mp-hmw-step">
                 <Box className="mp-hmw-icontext">
-                  <img src="/misspoppinsapp/selectchoices.svg" alt="Select Icon" className="mp-hmw-icon" />
+                  <img src={`${import.meta.env.BASE_URL}misspoppinsapp/selectchoices.svg`} alt="Select Icon" className="mp-hmw-icon" />
                   <Box>
                     <Typography className="mp-hmw-step-title">
                       1. <b>Use the Iyengar and Lepper Jam Study and Decoy Effect to <br /> structure session packages into three clear tiers:</b>
@@ -518,7 +553,7 @@ const MissPoppinsApp = () => {
 
               <Box className="mp-hmw-step">
                 <Box className="mp-hmw-icontext">
-                  <img src="/misspoppinsapp/goldstar.svg" alt="Gold Star" className="mp-hmw-icon2" />
+                  <img src={`${import.meta.env.BASE_URL}misspoppinsapp/goldstar.svg`} alt="Gold Star" className="mp-hmw-icon2" />
                   <Box>
                     <Typography className="mp-hmw-step-title2">
                       2. <b>Highlight popular or recommended packages</b> to provide decision-making cues and reduce the feeling of being overwhelmed.
@@ -539,7 +574,7 @@ const MissPoppinsApp = () => {
               <Box className="mp-hmw-combo">
                 <Typography className="mp-hmw-label">Before</Typography>
                 <Box className="mp-hmw-pair">
-                  <img src="/misspoppinsapp/hmwbefore2.svg" alt="Before Packages" className="mp-hmw-phone" />
+                  <img src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwbefore2.svg`} alt="Before Packages" className="mp-hmw-phone" />
                   <Typography className="mp-hmw-text">
                     The app’s current package page is <b>cluttered and disorganized</b>, presenting users with a wide range of session numbers and price points.
                     <br /><br />
@@ -551,7 +586,7 @@ const MissPoppinsApp = () => {
               <Box className="mp-hmw-combo">
                 <Typography className="mp-hmw-label">After</Typography>
                 <Box className="mp-hmw-pair">
-                  <img src="/misspoppinsapp/hmwafter2.svg" alt="After Packages" className="mp-hmw-phone" />
+                  <img src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter2.svg`} alt="After Packages" className="mp-hmw-phone" />
                   <Typography className="mp-hmw-text">
                     By incorporating the Decoy Effect into the session and pricing structure, and clearly labeling and describing each tier with a focus on their specific benefits, the <span className="highlight">decision-making process becomes simpler</span>, reducing decision fatigue and creating a more user-friendly experience.
                     <br /><br />
@@ -570,7 +605,11 @@ const MissPoppinsApp = () => {
           </Typography>
 
           <Box className="hmw3-step">
-            <img src="/misspoppinsapp/hmwsearchicon.svg" alt="Search Icon" className="hmw3-icon" />
+            <img
+              src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwsearchicon.svg`}
+              alt="Search Icon"
+              className="hmw3-icon"
+            />
             <Box className="hmw3-step-text">
               <span className="hmw3-bold">
                 1. Introduce a Generative AI-powered search bar
@@ -583,7 +622,11 @@ const MissPoppinsApp = () => {
               <Box className="mp-hmw-combo3">
                 <Typography className="mp-hmw-label3">Before</Typography>
                 <Box className="mp-hmw-pair3">
-                  <img src="/misspoppinsapp/hmwbefore3.svg" alt="Before Packages" className="mp-hmw-phone" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwbefore3.svg`}
+                    alt="Before Packages"
+                    className="mp-hmw-phone"
+                  />
                   <Typography className="mp-hmw-text">
                   <br /><br />
 
@@ -595,7 +638,11 @@ const MissPoppinsApp = () => {
               <Box className="mp-hmw-combo3">
                 <Typography className="mp-hmw-label">After</Typography>
                 <Box className="mp-hmw-pair3">
-                  <img src="/misspoppinsapp/hmwafter3.svg" alt="After Packages" className="mp-hmw-phone" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter3.svg`}
+                    alt="After Packages"
+                    className="mp-hmw-phone"
+                  />
                   <Typography className="mp-hmw-text">
                   For example, users can ask questions like "Which coaching package is best for first-time parents?" "What are some quick tips for calming a crying baby?" or "Can you help me find articles on toddler sleep training?"
                   <br /><br />
@@ -611,7 +658,11 @@ const MissPoppinsApp = () => {
             {/* HMW 3.2 - Sliding Sidebar */}
             <Box className="hmw3-subsection">
               <Box className="hmw3-step">
-                <img src="/misspoppinsapp/hmwslidebar.svg" alt="Slidebar Icon" className="hmw3-icon" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwslidebar.svg`}
+                  alt="Slidebar Icon"
+                  className="hmw3-icon"
+                />
                 <Box className="hmw3-step-text">
                   <span className="hmw3-bold">2. Simplify the information architecture</span> by reducing unnecessary clicks and pages. Implement a <span className="hmw3-red">sliding sidebar</span> menu for quick access to key categories like resources, appointment scheduling, and session packages.
                 </Box>
@@ -624,7 +675,7 @@ const MissPoppinsApp = () => {
                   <Box className="hmw3-img-description">
                   <video
                     className="mp-video3-2"
-                    src="/misspoppinsapp/hmw3-2.mov"
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw3-2.mov`}
                     autoPlay
                     muted
                     loop
@@ -655,7 +706,7 @@ const MissPoppinsApp = () => {
                   <Box className="hmw3-img-description">
                     <video
                       className="mp-video3-2"
-                      src="/misspoppinsapp/hmw3-2-2.mov"
+                      src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw3-2-2.mov`}
                       autoPlay
                       muted
                       loop
@@ -679,7 +730,11 @@ const MissPoppinsApp = () => {
               <Box className="hmw4-top-row">
                 {/* Step 1 */}
                 <Box className="hmw4-step">
-                  <img src="/misspoppinsapp/hmw4hand.svg" alt="Mentorship Icon" className="hmw4-icon" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw4hand.svg`}
+                    alt="Mentorship Icon"
+                    className="hmw4-icon"
+                  />
                   <Typography className="hmw4-step-text">
                     <b>1. Develop a mentorship community</b> where parents can connect with mentors or peers who have relevant experience.
                   </Typography>
@@ -687,7 +742,11 @@ const MissPoppinsApp = () => {
 
                 {/* Step 2 */}
                 <Box className="hmw4-step">
-                  <img src="/misspoppinsapp/hmw4chat.svg" alt="Chat Icon" className="hmw4-icon" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw4chat.svg`}
+                    alt="Chat Icon"
+                    className="hmw4-icon"
+                  />
                   <Typography className="hmw4-step-text">
                     <b>2. Enable an open chat feature</b> that is monitored and reviewed by Generative AI for moderation, ensuring that shared advice is credible and any inappropriate or misleading information is flagged or removed promptly.
                   </Typography>
@@ -695,8 +754,16 @@ const MissPoppinsApp = () => {
               </Box>
 
               <Box className="hmw4-phone-row">
-                <img src="/misspoppinsapp/hmw4before.svg" className="hmw4-phone" alt="Before Chat & Mentor" />
-                <img src="/misspoppinsapp/hmw4after.svg" className="hmw4-phone" alt="After Chat & Mentor" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw4before.svg`}
+                  className="hmw4-phone"
+                  alt="Before Chat & Mentor"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmw4after.svg`}
+                  className="hmw4-phone"
+                  alt="After Chat & Mentor"
+                />
               </Box>
             </Box>
 
@@ -707,9 +774,21 @@ const MissPoppinsApp = () => {
               <Typography className="mp-subtitle-wireframe">Wireframes Sketch</Typography>
 
               <Box className="mp-wireframes-row">
-                <img src="/misspoppinsapp/wireframe1.svg" alt="Wireframe 1" className="mp-wireframe-img" />
-                <img src="/misspoppinsapp/wireframe2.svg" alt="Wireframe 2" className="mp-wireframe-img" />
-                <img src="/misspoppinsapp/wireframe3.svg" alt="Wireframe 3" className="mp-wireframe-img" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/wireframe1.svg`}
+                  alt="Wireframe 1"
+                  className="mp-wireframe-img"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/wireframe2.svg`}
+                  alt="Wireframe 2"
+                  className="mp-wireframe-img"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/wireframe3.svg`}
+                  alt="Wireframe 3"
+                  className="mp-wireframe-img"
+                />
               </Box>
             </Box>
 
@@ -719,9 +798,21 @@ const MissPoppinsApp = () => {
               <Typography className="mp-subtitle">Wireframes </Typography>
 
               <Box className="mp-wireframes-row">
-                <img src="/misspoppinsapp/hmwafter3.svg" alt="Wireframe 1" className="mp-wireframe-img" />
-                <img src="/misspoppinsapp/hmwafter2.svg" alt="Wireframe 2" className="mp-wireframe-img" />
-                <img src="/misspoppinsapp/hmwafter1.svg" alt="Wireframe 3" className="mp-wireframe-img" />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter3.svg`}
+                  alt="Wireframe 1"
+                  className="mp-wireframe-img"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter2.svg`}
+                  alt="Wireframe 2"
+                  className="mp-wireframe-img"
+                />
+                <img
+                  src={`${import.meta.env.BASE_URL}misspoppinsapp/hmwafter1.svg`}
+                  alt="Wireframe 3"
+                  className="mp-wireframe-img"
+                />
               </Box>
 
               <a
