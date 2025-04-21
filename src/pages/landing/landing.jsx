@@ -18,7 +18,7 @@ const LandingPage = () => {
     window.onbeforeunload = () => {
       localStorage.removeItem('videoPlayed');
     };
-    
+
   }, []);
 
   const handleVideoEnd = () => {
@@ -325,10 +325,9 @@ const LandingPage = () => {
                       <h4>Empathy</h4>
                     </div>
                     <p>
-                    From building a machine learning-based ASL detector to leading cross-cultural 
-                    teams at Scale AI, I’ve thrived in fast-changing environments by staying flexible 
-                    and learning quickly. I adapt my design and technical approaches to meet evolving 
-                    user needs, technologies, and team goals.
+                    Conducting 15 user interviews at Miss Poppins taught me how deeply understanding users' 
+                    emotions and frustrations leads to better design decisions. I prioritize empathy in 
+                    every project, ensuring that user needs, feelings, and journeys are at the heart of my solutions.
                     </p>
                   </div>
                 </div>

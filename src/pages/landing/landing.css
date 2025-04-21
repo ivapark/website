@@ -323,7 +323,7 @@ html {
 .rock-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4px; 
+  gap: 0px; 
 }
 
 .rock-grid .rock-item:nth-child(5) {
@@ -344,6 +344,8 @@ html {
 .rock-skill {
   width: 180px;
   transition: transform 0.3s ease;
+  display: block; /* remove image's natural spacing */
+
 }
 
 .rock-skill:hover {
@@ -362,7 +364,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%) scale(0); /* center + start tiny */
   transform-origin: center center; /* grow from center */
-  width: 340px;
+  width: 300px;
   background: #ffffff;
   border-radius: 20px;
   padding: 40px;
