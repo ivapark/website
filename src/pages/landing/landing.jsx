@@ -325,10 +325,10 @@ const LandingPage = () => {
                       <h4>Empathy</h4>
                     </div>
                     <p>
-                    Through projects like NeroFilm and my MBTI Ramen, I focused on creating intuitive, 
-                    visually engaging interfaces that guide users naturally through their experience. 
-                    I believe every design tells a story — and I shape visual flows that connect users 
-                    emotionally and logically to the product.
+                    From building a machine learning-based ASL detector to leading cross-cultural 
+                    teams at Scale AI, I’ve thrived in fast-changing environments by staying flexible 
+                    and learning quickly. I adapt my design and technical approaches to meet evolving 
+                    user needs, technologies, and team goals.
                     </p>
                   </div>
                 </div>
