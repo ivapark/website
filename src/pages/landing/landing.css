@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +16,7 @@ html {
   align-items: center;
   overflow: auto;
   background-color: #FAFAFA;
+  overflow-x: hidden;
 
 }
 
@@ -251,6 +253,167 @@ html {
 }
 
 
+/* Why Rock section styles */
+
+.whyrock-section {
+  width: 100%;
+  background-color: #FFFBFB;
+  margin-top: 20px;
+  padding: 100px 0px;
+
+}
+
+.whyrock-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.whyrock-text {
+  flex: 1;
+  max-width: 500px;
+  margin-top: 140px;
+}
+
+.whyrock-text h2 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 36px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.whyrock-text h3 {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #625E78;
+}
+
+.whyrock-purple {
+  font-family: 'Inria Sans', sans-serif;
+  color: #8987AE;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.whyrock-note {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.whyrock-rocks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rock-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px; 
+}
+
+.rock-grid .rock-item:nth-child(5) {
+  grid-column: 1 / 2; 
+}
+
+.rock-grid .rock-item:nth-child(6) {
+  grid-column: 2 / 3; 
+}
+
+.rock-grid .rock-item:nth-child(7) {
+  grid-column: 1 / 3; /* Span both columns */
+  justify-self: center; /* center it horizontally */
+}
+
+
+
+.rock-skill {
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.rock-skill:hover {
+  transform: scale(1.1);
+}
+
+
+.rock-item {
+  position: relative;
+  display: inline-block;
+}
+
+.rock-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* center + start tiny */
+  transform-origin: center center; /* grow from center */
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 20;
+}
+
+.rock-item:hover .rock-popup {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* grow up from rock */
+  pointer-events: auto;
+}
+
+.rock-popup-header {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+
+}
+
+
+.popup-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.rock-popup h4 {
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+
+  
+}
+
+.rock-popup p {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 16px;
+  color: #8987AE;
+  line-height: 1.6;
+
+}
+
+
+
+
 
 
 /* Portfolio section styles */
@@ -259,8 +422,7 @@ html {
 .portfolio-section {
   width: 100%;
   text-align: center;
-  margin-top: 20px; /* Adjusted to position below the rocks */
-  background-color: #FAFAFA;
+  background-color: #F5FBFF;
   
 }
 

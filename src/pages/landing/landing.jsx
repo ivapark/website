@@ -134,6 +134,214 @@ const LandingPage = () => {
           </div>
 
 
+          {/* Why Rock Section */}
+          {/* Why Rock Section */}
+          <div className="whyrock-section" id="whyrock">
+            <div className="whyrock-content">
+              <div className="whyrock-text">
+                <h2>Why Rock?</h2>
+                <h3>Design with Purpose</h3>
+                <p className="whyrock-purple">
+                  Strength isn’t just born — it’s built, skill by skill. Like rocks shaped through weathering,
+                  my skills as a designer were forged through cycles of breaking down complexity, learning,
+                  and rebuilding with greater clarity. Each rock represents a skill — carefully formed through
+                  challenge, refinement, and growth — shaping who I am as a designer today.
+                </p>
+                <p className="whyrock-note">
+                  Hover on each rock to learn more!
+                </p>
+              </div>
+
+              <div className="whyrock-rocks">
+                <div className="rock-grid">
+                  <div className="rock-item">
+                    <img
+                      src={`${import.meta.env.BASE_URL}Whyrock/problemsolving.svg`}
+                      alt="Problem Solving"
+                      className="rock-skill"
+                    />
+                    
+                    <div className="rock-popup">
+                      <div className="rock-popup-header">
+                        <img
+                          src={`${import.meta.env.BASE_URL}Whyrock/problemsolvingicon.svg`}
+                          alt="Problem Solving Icon"
+                          className="popup-icon"
+                        />
+                        <h4>Problem Solving</h4>
+                      </div>
+                      <p>
+                        At Miss Poppins, I tackled complex user challenges by redesigning the pricing model
+                        and streamlining the scheduling system, boosting user engagement by 30%.
+                        I approach design problems by breaking them down into core pain points and
+                        crafting clear, actionable solutions.
+                      </p>
+                    </div>
+                  </div>
+
+
+
+
+                  <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/userResearch.svg`}
+                    alt="User Research"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/usericon.svg`}
+                        alt="Problem Solving Icon"
+                        className="popup-icon"
+                      />
+                      <h4>User Research</h4>
+                    </div>
+                    <p>
+                      I leveraged affinity diagrams and user research findings to reimagine core features at Miss Poppins, 
+                      directly addressing pain points in navigation and scheduling. I believe effective design starts with
+                      listening, observing, and deeply analyzing user behaviors and feedback.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/collaboration.svg`}
+                    alt="Collaboration"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/collaborationicon.svg`}
+                        alt="Problem Solving Icon"
+                        className="popup-icon"
+                      />
+                      <h4>Collaboration</h4>
+                    </div>
+                    <p>
+                    As a Quality Team Lead at Scale AI and a Research Assistant at NYU, collaboration was 
+                    key to refining projects, improving outcomes, and building strong workflows. Moreover, 
+                    at Miss Poppins, I worked closely with cross-functional teams — including engineers, 
+                    researchers, and stakeholders — to translate ideas into user-centered realities.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/interaction.svg`}
+                    alt="Interaction Design"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/interactionicon.svg`}
+                        alt="Interaction Design Icon"
+                        className="popup-icon"
+                      />
+                      <h4>Interaction Design</h4>
+                    </div>
+                    <p>
+                      I designed and wireframed seamless scheduling flows for Miss Poppins using Figma, 
+                      where I have over 4 years of hands-on experience. I focus on clear microinteractions 
+                      like real-time updates and automated reminders, crafting interactions that feel natural, 
+                      fluid, and rewarding — reducing friction while enhancing user confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/visual.svg`}
+                    alt="Visual Storytelling"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/visualicon.svg`}
+                        alt="Visual Storytelling Icon"
+                        className="popup-icon"
+                      />
+                      <h4>Visual Storytelling</h4>
+                    </div>
+                    <p>
+                    Through projects like NeroFilm and my MBTI Ramen, I focused on creating intuitive, 
+                    visually engaging interfaces that guide users naturally through their experience. 
+                    I believe every design tells a story — and I shape visual flows that connect users 
+                    emotionally and logically to the product.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/adaptability.svg`}
+                    alt="Adaptability"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/adaptabilityicon.svg`}
+                        alt="Adaptability Icon"
+                        className="popup-icon"
+                      />
+                      <h4>Adaptability</h4>
+                    </div>
+                    <p>
+                    From building a machine learning-based ASL detector to leading cross-cultural teams at Scale AI, 
+                    I’ve thrived in fast-changing environments by staying flexible and learning quickly. I adapt my 
+                    design and technical approaches to meet evolving user needs, technologies, and team goals.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="rock-item">
+                  <img
+                    src={`${import.meta.env.BASE_URL}Whyrock/empathy.svg`}
+                    alt="Empathy"
+                    className="rock-skill"
+                  />
+                  
+                  <div className="rock-popup">
+                    <div className="rock-popup-header">
+                      <img
+                        src={`${import.meta.env.BASE_URL}Whyrock/empathyicon.svg`}
+                        alt="Empathy Icon"
+                        className="popup-icon"
+                      />
+                      <h4>Empathy</h4>
+                    </div>
+                    <p>
+                    Through projects like NeroFilm and my MBTI Ramen, I focused on creating intuitive, 
+                    visually engaging interfaces that guide users naturally through their experience. 
+                    I believe every design tells a story — and I shape visual flows that connect users 
+                    emotionally and logically to the product.
+                    </p>
+                  </div>
+                </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
           {/* Portfolio Section */}
           <div className="portfolio-section" id="portfolio">
             <h2>Explore My Work</h2>
