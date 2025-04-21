@@ -105,8 +105,37 @@ const LandingPage = () => {
             </div>
           </div>
 
+
+
+          {/* About Me Section */}
+          <div className="about-section" id="about">
+            <div className="about-content">
+              <div className="about-image">
+                <img src={`${import.meta.env.BASE_URL}ivapfptrasparent.svg`} alt="Iva" />
+              </div>
+              <div className="about-text">
+                <h2>About Me</h2>
+                <p>
+                  I’m Iva, a Senior at NYU double majoring in Computer Science and Psychology.
+                  I specialize in UI/UX design and problem-solving, with hands-on experience in
+                  creating user-centered designs and enhancing digital experiences.
+                </p>
+                <p>
+                  My work spans startups and research projects, where I combine technical expertise
+                  with a deep understanding of human behavior to craft impactful solutions.
+                </p>
+                <p>
+                  I’m passionate about bridging technology and humanity, particularly in areas like
+                  perception and action, and I’m dedicated to developing accessible and meaningful
+                  innovations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
           {/* Portfolio Section */}
-          <div className="portfolio-section">
+          <div className="portfolio-section" id="portfolio">
             <h2>Explore My Work</h2>
             <div className="portfolio-grid">
               <div className="portfolio-textandimage">

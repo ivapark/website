@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.about-section, .whyrock-section, .portfolio-section {
+  scroll-margin-top: 80px; /* adjust based on header height */
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -51,6 +59,7 @@
   width: 100%;
   height: 100%;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .main-content {
@@ -184,6 +193,58 @@
   transform: scale(1.5);
 }
 
+
+/* About me */
+
+
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px -20px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 60px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1200px;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+.about-image img {
+  width: 500px;
+  margin-bottom: -20px;
+}
+
+.about-text {
+  flex: 1;
+  font-family: 'Inria Sans', sans-serif;
+  color: #9C9BAF;
+}
+
+.about-text h2 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 36px;
+  font-weight: 500;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+
 /* Portfolio section styles */
 
 
@@ -191,6 +252,7 @@
   width: 100%;
   text-align: center;
   margin-top: 20px; /* Adjusted to position below the rocks */
+  background-color: #FAFAFA;
 }
 
 .portfolio-section h2 {
@@ -270,3 +332,7 @@
 .portfolio-item:hover img {
   transform: scale(1.05);
 }
+
+
+
+
