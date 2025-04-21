@@ -37,7 +37,12 @@ border-radius: 12px;
 .asl-main-text {
   font-size: 20px !important;
   font-weight: 300 !important;
-  font-family: 'Inria Sans', sans-serif;
+}
+
+.asl-main-text1 {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  font-family: 'Inria Sans', sans-serif !important;
 
 }
 
@@ -149,7 +154,7 @@ border-radius: 12px;
   font-size: 24px;
   font-weight: 300;
   font-family: 'Inria Sans', sans-serif;
-  color: #444;
+  color: #6D6A6A !important;
   line-height: 1.7;
 }
 
@@ -168,6 +173,8 @@ border-radius: 12px;
 .asl-chart-text {
   max-width: 500px;
   margin-top: 70px;
+  color: #6D6A6A !important;
+  
 }
 
 .asl-chart-card {
@@ -238,9 +245,9 @@ border-radius: 12px;
 .asl-whatidid-list {
   font-size: 18px;
   font-weight: 300;
-  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Inria Sans', sans-serif !important;
   line-height: 1.7;
-  color: #444;
+  color: #6D6A6A;
   list-style-type: disc;
   padding-left: 1.5rem;
   max-width: 600px;

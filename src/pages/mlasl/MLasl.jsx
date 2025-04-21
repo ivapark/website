@@ -65,18 +65,18 @@ const MLasl = () => {
           </Box>
 
           <Box className="asl-about-text">
-            <Typography className="asl-main-text" paragraph>
+            <Typography className="asl-main-text1" paragraph>
               While typing remains an option in digital spaces like video conferencing platforms,
-              signing allows users to express tone, emotion, and nuance more naturally.
+              signing allows ASL users to express tone, emotion, and nuance more naturally.
             </Typography>
 
-            <Typography className="asl-main-text" paragraph>
+            <Typography className="asl-main-text1" paragraph>
               This tool supports that expressiveness by recognizing hand signs in real time—making
               communication more intuitive and inclusive for ASL users, and taking a meaningful step
               toward bridging the gap between signers and non-signers in digital platforms.
             </Typography>
 
-            <Typography className="asl-main-text">
+            <Typography className="asl-main-text1">
               The system uses advanced computer vision techniques to detect and interpret ASL alphabet signs,
               enabling more seamless communication between people who sign and those who don't,
               all within digital environments.
@@ -89,7 +89,7 @@ const MLasl = () => {
       {/* ASL Chart Section */}
       <Box className="asl-chart-section">
         <Box className="asl-chart-text">
-          <Typography className="asl-main-text">
+          <Typography className="asl-main-text1">
             At its core is a Convolutional Neural Network (CNN) built with TensorFlow, trained to
             recognize all 26 letters (A–Z) of the ASL alphabet. The model takes in a hand image,
             predicts the most likely letter, and returns both the predicted label and a confidence score.
@@ -157,7 +157,7 @@ const MLasl = () => {
         </Box>
       </Box>
 
-      
+
       {/* GitHub Button */}
       <Box className="asl-github-button-wrapper">
         <a

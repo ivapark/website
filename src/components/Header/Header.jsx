@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './Header.css';
 
+
 const Header = () => {
   return (
     <header>
@@ -9,8 +10,8 @@ const Header = () => {
         <Link to="/">Iva Park</Link> 
 
         <nav>
-          <Link to="/aboutme">About Me</Link>
-          <Link to="/whyrock">Why Rock?</Link>
+          <a href="#about">About Me</a>
+          <a href="#whyrock">Why Rock?</a>
           <a href="#portfolio">Portfolio</a>
         </nav>
       </div>
