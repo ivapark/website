@@ -50,3 +50,19 @@ a:hover{
 nav a:hover {
   color: #b8babb;
 }
+
+nav button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  cursor: pointer;
+  margin: 0 16px;
+  font-weight: 300;
+}
+
+nav button:hover {
+  color: #b8babb;
+}
+

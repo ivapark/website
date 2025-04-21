@@ -18,6 +18,7 @@ const LandingPage = () => {
     window.onbeforeunload = () => {
       localStorage.removeItem('videoPlayed');
     };
+    
   }, []);
 
   const handleVideoEnd = () => {
@@ -134,7 +135,6 @@ const LandingPage = () => {
           </div>
 
 
-          {/* Why Rock Section */}
           {/* Why Rock Section */}
           <div className="whyrock-section" id="whyrock">
             <div className="whyrock-content">
