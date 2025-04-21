@@ -4,15 +4,18 @@ html {
 
 .about-section, .whyrock-section, .portfolio-section {
   scroll-margin-top: 80px; /* adjust based on header height */
+  
 }
 
 .container {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: auto;
+  background-color: #FAFAFA;
+
 }
 
 .intro-video {
@@ -59,7 +62,7 @@ html {
   width: 100%;
   height: 100%;
   justify-content: center;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .main-content {
@@ -68,6 +71,9 @@ html {
   align-items: center;
   gap: 200px;
   width: 100%;
+  margin-bottom: 60px;
+
+
 }
 
 .text-and-rocks {
