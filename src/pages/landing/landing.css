@@ -3,7 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.about-section, .whyrock-section, .portfolio-section {
+.about-section {
+  scroll-margin-top: 100px;
+}
+.whyrock-section, .portfolio-section {
   scroll-margin-top: 0px; /* adjust based on header height */
   
 }
